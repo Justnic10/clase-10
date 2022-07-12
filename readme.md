@@ -2,10 +2,10 @@
 
 ## Tecnologias:
 
-*HTML5
+* HTML5
     
-*CSS
-    *FlexBox
-    *Grid
+* CSS
+    * FlexBox
+    * Grid
 
-*Sass
+* Sass
