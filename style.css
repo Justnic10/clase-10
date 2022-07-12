@@ -1,0 +1,106 @@
+/*body{
+    margin: 0;
+    padding: 0;
+    font-family: outfit, sans-serif ;
+}*/
+
+body {
+    background-image: linear-gradient(
+        360deg,
+        rgba(177, 255, 250, 0.901042) 0%,
+        #2fdaff
+    );
+    background-attachment: fixed;
+}
+
+
+.menu{
+    margin: 0;
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu li{
+    display: inline; /*Les saca los puntos a los li*/
+    margin: 10px 10px;
+}
+
+.section__darks{
+    background-color: black;
+}
+
+.section__darks__contenedor{
+    color: white;
+    display: grid;
+    grid-template-areas: 
+        " texto1 . ."
+        " . titulo ."
+        " . titulo texto2"
+    ;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    max-width: 700px;
+    margin: auto; /*lo acomoda al centro*/
+}
+
+.section__darks__titulo{
+    font-size: 3rem;
+    grid-area: titulo;
+    background-image: url("./imagenes/ugly-12.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; /*Asi cuando achico la pantalla el dibujo se mantiene en el centro*/
+}
+
+.section__darks__texto1{
+    grid-area: texto1;
+}
+
+.section__darks__texto2{
+    grid-area: texto2;
+}
+
+.section__nodarks{
+    margin: auto;
+    max-width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+section__nodarks__card{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section__nodarks__card h2{
+    font-size: 2rem;
+}
+
+.img-responsiva{
+    height: auto;
+    width: 100%;
+    max-width: 300px;
+}
+
+.carta{
+    width: 0;
+    height: 0;
+    border-top: 100px solid #eee;
+    border-right: 170px solid #ddd;
+    border-bottom: 100px solid #ccc;
+    border-left: 170px solid #ddd;
+    margin: 100px auto;
+}
+
+.corazon{
+    width: 32px;
+    height: 32px;
+    background-color: tomato;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
